@@ -1,5 +1,5 @@
 import React from 'react'
-import TermsAndConditions from '../Components/Home/TermsAndConditions'
+import TermsAndConditions from '../Components/TermsAndCondition/TermsAndConditions'
 
 function TermsAndCondiiton() {
   return (

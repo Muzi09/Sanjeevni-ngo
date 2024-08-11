@@ -11,7 +11,7 @@ function MyNavbar() {
   };
 
   const activeLinkStyle = {
-    color: '#38f1ff', // Set the active link color
+    color: '#1876D2', // Set the active link color
     fontWeight: 'bold',
   };
 
@@ -27,8 +27,8 @@ function MyNavbar() {
               WebkitTextFillColor: "transparent"
             }}
           >
-            <div className='text-sm font-semibold  font-mono' >Being Sanjeevani Foundation</div>
-            <div className='text-xs font-mono' >"Where Care Meets Compassion"</div>
+            <div className='text-sm font-semibold  logo-font' >Being Sanjeevani Foundation</div>
+            <div className='text-xs logo-font' >"Where Care Meets Compassion"</div>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />

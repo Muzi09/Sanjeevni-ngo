@@ -8,7 +8,7 @@ import { TextField, Button } from '@mui/material';
 
 function Events() {
     return (
-        <div className='container'>
+        <div className='container mb-5'>
 
             <div className='text-[#fff] px-2 py-1 rounded-md font-semibold text-lg' style={{ background: 'linear-gradient(90deg, rgba(255,99,0,1) 0%, rgba(255,194,103,1) 100%)' }}>
                 Upcoming events
@@ -22,6 +22,7 @@ function Events() {
                 showIndicators={true} // Shows the slide indicators
                 stopOnHover={true} // Pauses sliding when hovering over the carousel
                 dynamicHeight={true} // Adjusts the height dynamically based on content
+                swipeable={false}
                 style={{
                     width: "643px",
                     height: "500px"
@@ -38,15 +39,17 @@ function Events() {
                 </div>
             </Carousel>
 
+            <div className='flex justify-center'>
+                <Button
+                    type="submit"
+                    variant="contained"
+                    color="primary"
+                    className='font-bold'
+                >
+                    Register now
+                </Button>
 
-            <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                style={{ backgroundColor: '#00ccff', color: '#fff' }}
-            >
-               Register now
-            </Button>
+            </div>
 
         </div>
     )
