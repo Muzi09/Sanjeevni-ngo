@@ -5,9 +5,15 @@ import Logo from '../Assets/Logo.svg'; // Adjust path as necessary
 
 function MyNavbar() {
   const [expanded, setExpanded] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleNavLinkClick = () => {
     setExpanded(false);
+    setDropdownOpen(false); // Close dropdown when navigating away
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   const activeLinkStyle = {
@@ -27,8 +33,8 @@ function MyNavbar() {
               WebkitTextFillColor: "transparent"
             }}
           >
-            <div className='text-sm font-semibold  logo-font' >Being Sanjeevani Foundation</div>
-            <div className='text-xs logo-font' >"Where Care Meets Compassion"</div>
+            <div className='text-sm font-semibold  logo-font'>Being Sanjeevani Foundation</div>
+            <div className='text-xs logo-font'>"Where Care Meets Compassion"</div>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
@@ -59,14 +65,47 @@ function MyNavbar() {
             >
               Contact Us
             </Nav.Link>
-            <Nav.Link 
-              as={NavLink} 
-              to="/our-policies" 
-              onClick={handleNavLinkClick}
+            <div className="relative">
+              <button 
+                className="nav-link text-gray-700" 
+                onClick={toggleDropdown}
+              >
+                Our Policies&#9660;
+              </button>
+              <div 
+                className={`absolute right-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg transition-all duration-300 ease-in-out origin-top-right ${
+                  dropdownOpen ? 'transform scale-100 opacity-100' : 'transform scale-95 opacity-0 pointer-events-none'
+                }`}
+              >
+                <Nav.Link 
+                  as={NavLink} 
+                  to="/our-policies/privacy-policy" 
+                  onClick={handleNavLinkClick}
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               style={({ isActive }) => isActive ? activeLinkStyle : undefined}
-            >
-              Our Policies
-            </Nav.Link>
+                >
+                  Privacy Policy
+                </Nav.Link>
+                <Nav.Link 
+                  as={NavLink} 
+                  to="/our-policies/shipping-and-delivery" 
+                  onClick={handleNavLinkClick}
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              style={({ isActive }) => isActive ? activeLinkStyle : undefined}
+                >
+                  Shipping & Delivery
+                </Nav.Link>
+                <Nav.Link 
+                  as={NavLink} 
+                  to="/our-policies/cancellation-and-refund" 
+                  onClick={handleNavLinkClick}
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              style={({ isActive }) => isActive ? activeLinkStyle : undefined}
+                >
+                  Cancellation & Refund
+                </Nav.Link>
+              </div>
+            </div>
             <Nav.Link 
               as={NavLink} 
               to="/terms-and-conditions" 

@@ -5,8 +5,11 @@ const Layout = lazy(() => import("../Layout/Layout"));
 const Home = lazy(() => import("../Pages/Home"));
 const AboutUs = lazy(() => import("../Pages/AboutUs"));
 const ContactUs = lazy(() => import("../Pages/ContactUs"));
-const OurPolicies = lazy(() => import("../Pages/OurPolicies"));
 const TermsAndCondiiton = lazy(() => import("../Pages/TermsAndCondition"));
+
+const PrivacyPolicies = lazy(() => import("../Pages/OurPolicies/PrivacyPolicies"));
+const ShippingDelivery = lazy(() => import("../Pages/OurPolicies/ShippingDelivery"));
+const CancellationRefunds = lazy(() => import("../Pages/OurPolicies/CancellationRefunds"));
 
 const Router = () => {
   return (
@@ -49,11 +52,31 @@ const Router = () => {
 
 
         <Route
-          path="/our-policies"
+          path="/our-policies/privacy-policy"
           element={
             <Layout>
               <Suspense>
-                <OurPolicies />
+                <PrivacyPolicies />
+              </Suspense>
+            </Layout>
+          }
+        />
+        <Route
+          path="/our-policies/shipping-and-delivery"
+          element={
+            <Layout>
+              <Suspense>
+                <ShippingDelivery />
+              </Suspense>
+            </Layout>
+          }
+        />
+        <Route
+          path="/our-policies/cancellation-and-refund"
+          element={
+            <Layout>
+              <Suspense>
+                <CancellationRefunds />
               </Suspense>
             </Layout>
           }

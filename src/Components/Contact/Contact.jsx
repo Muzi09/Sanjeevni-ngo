@@ -1,5 +1,6 @@
 import React from 'react';
 import { TextField, Button } from '@mui/material';
+import Map from './Map';
 
 function Contact() {
 
@@ -19,6 +20,8 @@ function Contact() {
             <div className='text-[#fff] px-2 py-1 mb-4 rounded-md font-semibold text-lg' style={{ background: 'linear-gradient(90deg, rgba(255,99,0,1) 0%, rgba(255,194,103,1) 100%)' }}>
                 Contact Us
             </div>
+
+            <Map/>
             <span className='font-semibold'>Have a query ? Fill the below we will get back to you. </span>
             <div className='py-6'>
                 <form className='space-y-4 mb-5'>
