@@ -40,75 +40,74 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-center">
-            <Nav.Link 
-              as={NavLink} 
-              to="/" 
-              exact 
+            <Nav.Link
+              as={NavLink}
+              to="/"
+              exact
               onClick={handleNavLinkClick}
               style={({ isActive }) => isActive ? activeLinkStyle : undefined}
             >
               Home
             </Nav.Link>
-            <Nav.Link 
-              as={NavLink} 
-              to="/about-us" 
+            <Nav.Link
+              as={NavLink}
+              to="/about-us"
               onClick={handleNavLinkClick}
               style={({ isActive }) => isActive ? activeLinkStyle : undefined}
             >
               About Us
             </Nav.Link>
-            <Nav.Link 
-              as={NavLink} 
-              to="/contact-us" 
+            <Nav.Link
+              as={NavLink}
+              to="/contact-us"
               onClick={handleNavLinkClick}
               style={({ isActive }) => isActive ? activeLinkStyle : undefined}
             >
               Contact Us
             </Nav.Link>
-            <div className="relative">
-              <button 
-                className="nav-link text-gray-700" 
+            <div className="relative flex justify-center">
+              <button
+                className="nav-link text-gray-700"
                 onClick={toggleDropdown}
               >
                 Our Policies&#9660;
               </button>
-              <div 
-                className={`absolute right-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg transition-all duration-300 ease-in-out origin-top-right ${
-                  dropdownOpen ? 'transform scale-100 opacity-100' : 'transform scale-95 opacity-0 pointer-events-none'
-                }`}
+              <div
+                className={`z-20- absolute right-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg transition-all duration-300 ease-in-out origin-top-right ${dropdownOpen ? 'transform scale-100 opacity-100' : 'transform scale-95 opacity-0 pointer-events-none'
+                  }`}
               >
-                <Nav.Link 
-                  as={NavLink} 
-                  to="/our-policies/privacy-policy" 
+                <Nav.Link
+                  as={NavLink}
+                  to="/our-policies/privacy-policy"
                   onClick={handleNavLinkClick}
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              style={({ isActive }) => isActive ? activeLinkStyle : undefined}
+                  style={({ isActive }) => isActive ? activeLinkStyle : undefined}
                 >
                   Privacy Policy
                 </Nav.Link>
-                <Nav.Link 
-                  as={NavLink} 
-                  to="/our-policies/shipping-and-delivery" 
+                <Nav.Link
+                  as={NavLink}
+                  to="/our-policies/shipping-and-delivery"
                   onClick={handleNavLinkClick}
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              style={({ isActive }) => isActive ? activeLinkStyle : undefined}
+                  style={({ isActive }) => isActive ? activeLinkStyle : undefined}
                 >
                   Shipping & Delivery
                 </Nav.Link>
-                <Nav.Link 
-                  as={NavLink} 
-                  to="/our-policies/cancellation-and-refund" 
+                <Nav.Link
+                  as={NavLink}
+                  to="/our-policies/cancellation-and-refund"
                   onClick={handleNavLinkClick}
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              style={({ isActive }) => isActive ? activeLinkStyle : undefined}
+                  style={({ isActive }) => isActive ? activeLinkStyle : undefined}
                 >
                   Cancellation & Refund
                 </Nav.Link>
               </div>
             </div>
-            <Nav.Link 
-              as={NavLink} 
-              to="/terms-and-conditions" 
+            <Nav.Link
+              as={NavLink}
+              to="/terms-and-conditions"
               onClick={handleNavLinkClick}
               style={({ isActive }) => isActive ? activeLinkStyle : undefined}
             >
