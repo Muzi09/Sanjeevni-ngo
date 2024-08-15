@@ -32,7 +32,7 @@ function Footer() {
             <h3 className="h5 font-weight-semibold text-center">Navigation</h3>
             <ul className="list-unstyled text-center">
               <li>
-                <a href="/home" className="text-muted text-decoration-none">
+                <a href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-muted text-decoration-none">
                   Home
                 </a>
               </li>
