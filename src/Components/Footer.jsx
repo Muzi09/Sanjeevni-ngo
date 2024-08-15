@@ -47,18 +47,13 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/our-policies" className="text-muted text-decoration-none">
-                  Our Policies
-                </a>
-              </li>
-              <li>
                 <a href="/terms-and-conditions" className="text-muted text-decoration-none">
                   Terms And Conditions
                 </a>
               </li>
             </ul>
           </div>
-          <div className="col-lg-3 col-sm-6 mb-4">
+          {/* <div className="col-lg-3 col-sm-6 mb-4">
             <h3 className="h5 font-weight-semibold text-center">Support</h3>
             <ul className="list-unstyled text-center">
               <li>
@@ -87,35 +82,35 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <hr />
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-muted py-2">
           <p className='position-relative top-2'>&copy; 2024 Being Sanjeevani. All rights reserved.</p>
-          <div className="d-flex mb-3 mb-md-0">
+          {/* <div className="d-flex mb-3 mb-md-0">
             <a href="/our-policy" className="text-muted text-decoration-none mx-2">
               Our Policies
             </a>
             <a href="/terms-and-conditions" className="text-muted text-decoration-none mx-2">
               Terms and Conditions
             </a>
-          </div>
+          </div> */}
           <div className="d-flex">
-            <a href="#" className="text-muted mx-2">
-              <FacebookIcon className="w-5 h-5" />
+            <a href='https://www.facebook.com/sanjeevnisewajankalyansamiti'  className="text-muted mx-2">
+              <FacebookIcon  className="w-5 h-5" />
             </a>
-            <a href="#" className="text-muted mx-2">
+            {/* <a href="#" className="text-muted mx-2">
               <TwitterIcon className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-muted mx-2">
+            </a> */}
+            <a href='https://instagram.com/being_sanjeevani_foundation?igshid=YmMyMTA2M2Y=' className="text-muted mx-2">
               <InstagramIcon className="w-5 h-5" />
             </a>
-            <a href="#" className="text-muted mx-2">
+            {/* <a href="#" className="text-muted mx-2">
               <LinkedinIcon className="w-5 h-5" />
             </a>
             <a href="#" className="text-muted mx-2">
               <YoutubeIcon className="w-5 h-5" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
