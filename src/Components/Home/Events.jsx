@@ -40,6 +40,7 @@ function Events() {
             </Carousel>
 
             <div className='flex justify-center'>
+                <a target='_blank' href='https://pages.razorpay.com/mrcl'>
                 <Button
                     type="submit"
                     variant="contained"
@@ -48,6 +49,8 @@ function Events() {
                 >
                     Register now
                 </Button>
+
+                </a>
 
             </div>
 
