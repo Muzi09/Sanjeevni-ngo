@@ -27,17 +27,23 @@ function MyNavbar() {
         <Navbar.Brand className='d-flex items-center' as={NavLink} to="/">
           <img src={Logo} width={70} alt="Logo" className="logo" />
           <div
+          >
+            <div className='text-sm font-semibold  logo-font' 
             style={{
               background: "linear-gradient(90deg, rgba(255,99,0,1) 0%, rgba(75,242,255,1) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent"
-            }}
-          >
-            <div className='text-sm font-semibold  logo-font'>Being Sanjeevani Foundation</div>
-            <div className='text-xs logo-font'>"Where Care Meets Compassion"</div>
+            }}>Being Sanjeevani Foundation</div>
+            <div className='text-xs logo-font' 
+            style={{
+              background: "linear-gradient(90deg, rgba(255,99,0,1) 0%, rgba(75,242,255,1) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
+            }}>"Where Care Meets Compassion"</div>
+            <div  className='text-xs text-slate-400 logo-font ms-1 mt-1'>07/33/05/17537/22</div>
           </div>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
+        <Navbar.Toggle aria-controls="basic-navbar-nav"  onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-center">
             <Nav.Link

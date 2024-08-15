@@ -23,13 +23,13 @@ const Map = () => {
                     </div>
                     <div >
                         <p className='d-flex justify-content-between'>
-                            <strong style={{ color: 'var(--primary-color)' }}>Address</strong> <div className='w-50'>F-13 Birlagram, Nagda, Dist (Ujjain), 456331</div> 
+                            <strong style={{ color: 'var(--primary-color)' }}>Address</strong> <div className='w-50'>F-13 Birlagram, Nagda, Dist (Ujjain), Madhya Pradesh 456331</div> 
                         </p>
                         <p className='d-flex justify-content-between'>
                             <strong style={{ color: 'var(--primary-color)' }}>Phone</strong> <div className='w-50'>9039381859</div> 
                         </p>
                         <p className='d-flex justify-content-between'>
-                            <strong style={{ color: 'var(--primary-color)' }}>Email</strong>  <div className='w-50'>abhanot@pciglobal.in</div>  
+                            <strong style={{ color: 'var(--primary-color)' }}>Email</strong>  <div className='w-50'>beingsanjeevanifoundation@gmail.com</div>  
                         </p>
                     </div>
                 </div>
