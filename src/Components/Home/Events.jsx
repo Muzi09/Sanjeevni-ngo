@@ -1,7 +1,7 @@
 import React from 'react';
-import Tournament from "../../Assets/Tournament.jpg";
-import Tournament2 from "../../Assets/Tournament2.jpg";
-import Tournament3 from "../../Assets/Tournament3.jpg";
+import Tournament from "../../Assets/Tournament1.jpg";
+import Tournament3 from "../../Assets/Tournament2.jpg";
+import Tournament2 from "../../Assets/Tournament3.jpg";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Ensure this is imported for styling
 import { TextField, Button } from '@mui/material';
@@ -9,6 +9,8 @@ import { TextField, Button } from '@mui/material';
 function Events() {
     return (
         <div className='container mb-5'>
+
+
 
             <div className='text-[#fff] px-2 py-1 rounded-md font-semibold text-lg' style={{ background: 'linear-gradient(90deg, rgba(255,99,0,1) 0%, rgba(255,194,103,1) 100%)' }}>
                 Upcoming events
@@ -39,7 +41,8 @@ function Events() {
                 </div>
             </Carousel>
 
-            <div className='flex justify-center'>
+
+<div className='flex justify-center mb-4'>
                 <a target='_blank' href='https://pages.razorpay.com/mrcl'>
                 <Button
                     type="submit"
@@ -53,6 +56,7 @@ function Events() {
                 </a>
 
             </div>
+
 
         </div>
     )

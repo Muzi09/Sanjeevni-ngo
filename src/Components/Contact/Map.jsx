@@ -21,15 +21,15 @@ const Map = () => {
                             loading="lazy"
                         ></iframe>
                     </div>
-                    <div >
+                    <div  >
                         <p className='d-flex justify-content-between'>
-                            <strong style={{ color: 'var(--primary-color)' }}>Address</strong> <div className='w-50'>F-13 Birlagram, Nagda, Dist (Ujjain), Madhya Pradesh 456331</div> 
+                            <strong style={{ color: 'var(--primary-color)' }}>Address</strong> <div className='text-end'>F-13 Birlagram, Nagda, Dist (Ujjain), Madhya Pradesh 456331</div> 
                         </p>
                         <p className='d-flex justify-content-between'>
-                            <strong style={{ color: 'var(--primary-color)' }}>Phone</strong> <div className='w-50'>9039381859</div> 
+                            <strong style={{ color: 'var(--primary-color)' }}>Phone</strong> <div className='text-end'>9039381859</div> 
                         </p>
                         <p className='d-flex justify-content-between'>
-                            <strong style={{ color: 'var(--primary-color)' }}>Email</strong>  <div className='w-50'>beingsanjeevanifoundation@gmail.com</div>  
+                            <strong style={{ color: 'var(--primary-color)' }}>Email</strong>  <div className='text-end'>beingsanjeevanifoundation@gmail.com</div>  
                         </p>
                     </div>
                 </div>
