@@ -1,5 +1,4 @@
 import React from 'react'
-import Waves from '../Wave/Wave'
 
 function About() {
   return (
