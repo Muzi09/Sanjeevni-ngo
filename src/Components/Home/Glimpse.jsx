@@ -1,9 +1,8 @@
 import React from 'react';
-import Glimpse1 from "../../Assets/Glimpse-1.JPG";
-import Glimpse2 from "../../Assets/Glimpse-2.JPG";
-import Glimpse3 from "../../Assets/Glimpse-3.JPG";
-import Glimpse4 from "../../Assets/Glimpse-4.JPG";
-import Glimpse5 from "../../Assets/Glimpse-5.JPG";
+import Glimpse1 from "../../Assets/Glimpses1.jpg";
+import Glimpse2 from "../../Assets/Glimpses2.jpg";
+import Glimpse3 from "../../Assets/Glimpses3.jpg";
+import Glimpse4 from "../../Assets/Glimpses4.jpg";
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Ensure this is imported for styling
@@ -42,9 +41,6 @@ function Glimpse() {
                 </div>
                 <div>
                     <img src={Glimpse4} alt="Glimpse 4" />
-                </div>
-                <div>
-                    <img src={Glimpse5} alt="Glimpse 5" />
                 </div>
             </Carousel>
 
